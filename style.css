@@ -2,9 +2,9 @@
 @keyframes loading-appear {
   50% {
     opacity: 0.90;
+    z-index: 20;
   }
   99% {
-    z-index: 20;
   }
   100% {
     opacity: 0;
@@ -200,7 +200,6 @@ a {
 
 .button__like {
   width: 28px;
-  z-index: 0;
   position: relative;
   font-family: "Font Awesome 5 Free";
   font-size: 25px;
@@ -250,7 +249,6 @@ a {
 }
 
 .animation::after {
-  z-index: 0;
   position: absolute;
   content: "";
   width: 85%;
@@ -273,8 +271,8 @@ a {
   justify-content: center;
   width: 120px;
   height: 120px;
-  border: 4px solid #666666;
-  background-color: #595959;
+  border: 4px solid hsl(233, 36%, 47%);
+  background-color: #671010;
   margin: 0% 2%;
   border-radius: 50%;
   z-index: 3;
@@ -325,77 +323,6 @@ a {
 }
 .animation__plate__fork2 img {
   height: 100%;
-}
-.animation__plate__food12 {
-  width: 25%;
-  height: 25%;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.animation__plate__food12::before {
-  position: absolute;
-  top: 35%;
-  right: 31%;
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 40px;
-  content: "\f578";
-  color: #ffffff;
-  transform: translateY(-150px);
-  animation: icons-appearing 610ms both;
-}
-.animation__plate__food12::after {
-  width: auto;
-  height: auto;
-  z-index: 1;
-  position: absolute;
-  top: 35%;
-  right: 30%;
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 40px;
-  content: "\f7ec";
-  color: #ffffff;
-  transform: translateY(-150px);
-  animation: icons-appearing 610ms 610ms both;
-}
-.animation__plate__food34 {
-  width: 25%;
-  height: 25%;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.animation__plate__food34::before {
-  position: absolute;
-  top: 35%;
-  right: 33%;
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 40px;
-  content: "\f7ef";
-  color: #ffffff;
-  transform: translateY(-150px);
-  animation: icons-appearing 610ms 1220ms both;
-}
-.animation__plate__food34::after {
-  position: absolute;
-  top: 30%;
-  right: 37%;
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 40px;
-  content: "\f5d1";
-  color: #ffffff;
-  transform: translateY(-150px);
-  animation: icons-appearing 610ms 1830ms both;
 }
 
 .body {
@@ -603,6 +530,7 @@ a {
   gap: 4%;
   background-color: #f6f6f6;
   box-shadow: 0 4px 10px 0 #d5d5d5;
+  cursor: pointer;
 }
 @media all and (min-width: 1024px) {
   .fonction__step {
@@ -771,7 +699,6 @@ a {
   background-color: #f0f0f0;
   border-radius: 25px 25px 0px 0px;
   padding: 2% 5% 5% 5%;
-  z-index: 0;
 }
 @media all and (min-width: 1024px) {
   .menu {
