@@ -2,13 +2,13 @@
 @keyframes loading-appear {
   50% {
     opacity: 0.90;
-    z-index: 20;
+    z-index: 30;
   }
   99% {
   }
   100% {
     opacity: 0;
-    z-index: -20;
+    z-index: -30;
   }
 }
 @keyframes rotate-gradient {
